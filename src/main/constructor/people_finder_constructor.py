@@ -11,4 +11,4 @@ def people_finder_constructor():
     if response["success"]:
         people_finder_view.find_person_success(response["message"])
     else:
-        people_finder_view.find_person_fail(response["eror"])
+        people_finder_view.find_person_fail(response["error"])
