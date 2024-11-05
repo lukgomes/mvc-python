@@ -23,10 +23,10 @@ class PeopleRegisterController:
         try: int(new_person_informations["height"])
         except: raise Exception('Campo Altura Incorreto!')
 
-    def __create_person_entity_and_store(self, new_person_informarions: Dict) -> None:
-        name = new_person_informarions["name"]
-        age = new_person_informarions["age"]
-        height = new_person_informarions["height"]
+    def __create_person_entity_and_store(self, new_person_informations: Dict) -> None:
+        name = new_person_informations["name"]
+        age = new_person_informations["age"]
+        height = new_person_informations["height"]
 
         new_person = Person(name, age, height)
         person_repository.registry_person(new_person)
